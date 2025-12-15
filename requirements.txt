@@ -1,0 +1,66 @@
+pandas>=2.0.0
+numpy>=1.24.0
+streamlit>=1.28.0
+plotly>=5.14.0
+```
+
+---
+
+### ✅ **2. Atualizar `.gitignore`**
+
+Se ainda não tiver, crie o arquivo `.gitignore` na raiz:
+```
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+
+# Data files
+*.db
+*.sqlite
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+```
+
+---
+
+### ✅ **3. Verificar Estrutura Final**
+
+Sua estrutura deve estar assim:
+```
+agente-cloudwalk/
+├── screenshots/                  ✅
+│   ├── tela_inicial.png
+│   ├── agente_exemplo.png
+│   ├── agente_exemplo2.png
+│   ├── sql_detalhado.png
+│   └── alertas_dashboard.png
+├── data/                         ✅
+│   └── operational_intelligence_transactions_db.csv
+├── src/                          ✅
+│   ├── __init__.py
+│   ├── sql_agent.py
+│   ├── pandas_agent.py
+│   ├── hybrid_agent.py
+│   └── alerts.py
+├── app.py                        ✅
+├── README.md                     ✅
+├── requirements.txt              ⬅️ Criar/verificar
+├── .gitignore                    ⬅️ Criar/verificar
+└── venv/
